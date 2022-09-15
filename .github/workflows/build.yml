@@ -14,3 +14,4 @@ jobs:
           scope: '@gluecodes'
       - run: yarn install --production=false
       - run: yarn lint
+      - run: yarn build
