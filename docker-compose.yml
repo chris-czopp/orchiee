@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+  orchiee:
+    build: .
+    container_name: orchiee
+    command: "tail -f /dev/null"
+    volumes:
+      - .:/src/orchiee:rw
+      - /src/orchiee/node_modules
+    env_file:
+      - .env

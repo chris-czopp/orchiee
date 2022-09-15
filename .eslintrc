@@ -1,0 +1,34 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "standard",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "mocha": true
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "indent": "off",
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "multiline-ternary": "off",
+    "space-before-function-paren": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "18.0.0"
+    }
+  }
+}

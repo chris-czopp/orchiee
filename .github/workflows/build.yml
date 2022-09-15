@@ -1,0 +1,16 @@
+name: Build Orchiee
+on:
+  pull_request:
+    branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@gluecodes'
+      - run: yarn install --production=false
+      - run: yarn lint

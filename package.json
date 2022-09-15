@@ -1,0 +1,48 @@
+{
+  "name": "@gluecodes/orchiee",
+  "version": "0.1.0",
+  "description": "Action orchestrator for Solid and React",
+  "main": "./dist/bundles/index.bundle.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gluecodes/orchiee.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "ts": "tsc --declaration --declarationMap",
+    "build": "webpack --config webpack.config.js --mode production && yarn run ts",
+    "lint": "eslint . --ext .ts --ext .tsx"
+  },
+  "sideEffects": false,
+  "author": "Chris Czopp",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.17.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.18.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "babel-loader": "^8.2.4",
+    "eslint": "^8.13.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.7.4",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "files": [
+    "src"
+  ],
+  "types": "./dist/index.d.ts"
+}
