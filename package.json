@@ -1,6 +1,6 @@
 {
   "name": "@gluecodes/orchiee",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Action orchestrator for Solid and React",
   "main": "./dist/bundles/index.bundle.js",
   "files": [
