@@ -12,6 +12,7 @@ jobs:
           node-version: '16.x'
           registry-url: https://npm.pkg.github.com/
           scope: '@gluecodes'
+          always-auth: true
       - run: yarn install --production=false
       - run: yarn lint
       - run: yarn publish --non-interactive
