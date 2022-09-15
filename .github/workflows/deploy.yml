@@ -15,6 +15,6 @@ jobs:
           always-auth: true
       - run: yarn install --production=false
       - run: yarn lint
-      - run: yarn publish --non-interactive
+      - run: echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc && yarn publish --non-interactive
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
