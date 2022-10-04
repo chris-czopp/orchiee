@@ -67,7 +67,7 @@ export const be = <T extends (...args: any[]) => any>(action: T): T => {
     actionRegistryEntry.recentArgs = args
     notifyListeners(ObservationStateType.notCalled, action, false)
 
-    const actionBeingExecuted = action.call(this, ...args)
+    const actionBeingExecuted = action(...args)
 
     if (actionBeingExecuted instanceof Promise) {
       notifyListeners(ObservationStateType.calling, action, true)
