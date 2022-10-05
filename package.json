@@ -1,6 +1,6 @@
 {
   "name": "@gluecodes/orchiee",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Action orchestrator",
   "main": "./dist/bundles/index.bundle.js",
   "files": [
