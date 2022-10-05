@@ -2,7 +2,9 @@
 
 **Framework-agnostic action orchestrator with an awesome type support**
 
+[![Deploy Orchiee](https://github.com/chris-czopp/orchiee/actions/workflows/deploy.yml/badge.svg)](https://github.com/chris-czopp/orchiee/actions/workflows/deploy.yml) 
 [![NPM Version](https://img.shields.io/npm/v/@gluecodes/orchiee.svg?style=flat)](https://www.npmjs.com/package/@gluecodes/orchiee)
+
 
 ## Installation
 
