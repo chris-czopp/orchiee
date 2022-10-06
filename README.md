@@ -35,6 +35,9 @@ Fn.observe(Fn.failed(observedSomeAction), (error) => {
 Fn.observe(Fn.called(observedSomeAction, Fn.called(action1), Fn.called(action2)), (itsReturnedValue) => {
   // when action1() or action2() is triggered, this callback is triggered
 })
+
+// on cleanup of your framework
+Fn.cleanup() // clears all listeners
 ```
 
 ## License
